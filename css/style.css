@@ -609,6 +609,13 @@ Subscription section
 	padding-right: 18px;
 }
 
+.sub-list1 {
+	
+	background: #f1f1f1;
+	padding: 50px 40px 50px 40px;
+	border-radius: 42px;
+}
+
 /* ----------------
 Premium section 
  -------------------*/
@@ -1775,6 +1782,11 @@ Responsive
 	.sub-list {
 		padding: 60px 15px 50px 30px;
 	}
+
+	.sub-list1 {
+		padding: 15px 15px 15px 15px;
+	}
+
 	.sub-text {
 		margin-bottom: 50px;
 	}
