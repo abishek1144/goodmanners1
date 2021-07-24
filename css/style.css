@@ -221,8 +221,7 @@ Header section
  ---------------------*/
 
 .header-section {
-	padding-left: 0px;
-	padding-right: 0px;
+
 	background: #08192d;
 }
 
@@ -263,43 +262,7 @@ Header section
 .header-right span {
 	color: #fff;
 	display: inline-block;
-	padding-left: 0px;
-}
-
-.header-right-most {
-	float: right;
-	display: inline-block;
-	padding: 10px 10px 10px 0px;
-	margin-left: 130px;
-	
-}
-
-.header-right-most .hr-btn {
-	display: inline-block;
-	color: #ffffff;
-	font-weight: 500;
-	font-size: 15px;
-}
-
-.header-right-most .user-panel {
-	display: inline-block;
-}
-
-.header-right-most .user-panel a {
-	font-size: 16px;
-	color: #ffffff;
-	margin: 0 10px;
-}
-
-.header-right-most .user-panel .register {
-	color: #0e9b0e;
-	margin-right: 0;
-}
-
-.header-right-most span {
-	color: #fff;
-	display: inline-block;
-	padding-left: 2px;
+	padding:0;
 }
 
 .main-menu {
@@ -308,65 +271,47 @@ Header section
 
 }
 
+.main-menu {
+    list-style: none;
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+    
+}
+.main-menu:after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+}
 .main-menu li {
-	display:inline-block;
-	position: relative;
+	padding-top: 5px;
+    display: inline-block;
+	
 }
 
 .main-menu li a {
-	display: block;
-	font-size: 11.35px;
-	color: #ffffff;
-	padding: 20px 0px 10px 10px;
-	margin-right: 0px;
+	color: white;
+	font-size: 14px;
+	border-radius: 6px;
+	padding: 10px 5px 10px 5px;
+	font-weight: 1000;
 }
 
-.main-menu li a:hover {
-	color: #0e9b0e;
+.main-menu li a:hover{
+	background-color: #0e9b0ec2;
+	color: white;
 }
 
 .main-menu li:first-child a {
-	margin-left: 10px;
+	margin-left: 15px;
 }
 
-.main-menu li:hover .sub-menu {
-	visibility: visible;
-	opacity: 1;
-	margin-top: 0;
+.main-menu li:last-child a {
+	margin-right: 15px;
 }
 
-.main-menu .sub-menu {
-	position: absolute;
-	list-style: none;
-	width: 220px;
-	left: 60px;
-	top: 100%;
-	padding: 20px 0;
-	visibility: hidden;
-	opacity: 0;
-	margin-top: 50px;
-	background: #fff;
-	z-index: 99;
-	-webkit-transition: all 0.4s;
-	transition: all 0.4s;
-	-webkit-box-shadow: 2px 7px 20px rgba(0, 0, 0, 0.05);
-	box-shadow: 2px 7px 20px rgba(0, 0, 0, 0.05);
-}
-
-.main-menu .sub-menu li {
-	display: block;
-}
-
-.main-menu .sub-menu li a {
-	display: block;
-	color: #000;
-	margin-left: 0;
-	padding: 5px 20px;
-}
-
-.main-menu .sub-menu li a:hover {
-	color: #0e9b0e;
-}
 
 .slicknav_menu {
 	display: none;
@@ -562,6 +507,7 @@ Subscription section
 }
 .subscription-section1 {
 	background: white;
+	justify-content: center;
 }
 .sub-text {
 	padding-right: 15px;
@@ -612,8 +558,10 @@ Subscription section
 .sub-list1 {
 	
 	background: #f1f1f1;
-	padding: 50px 40px 50px 40px;
+	padding: 50px 40px 50px 10px;
 	border-radius: 42px;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
 /* ----------------
@@ -1458,9 +1406,23 @@ Responsive
 	.header-right-most {
 		margin-left: 50px;
 	}
-	.main-menu li a {
-		margin-left: 25px;
-	}
+	.main-menu {
+    list-style: none;
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+}
+.main-menu:after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+}
+.main-menu li {
+    display: inline-block;
+}
+
 	.main-menu .sub-menu {
 		left: 25px;
 	}
@@ -1479,18 +1441,31 @@ Responsive
 	.header-right-most {
 		margin-left: 20px;
 	}
-	.main-menu li a {
-		margin-left: 15px;
+	.main-menu {
+		list-style: none;
+		display: block;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		text-align: justify;
 	}
-	.main-menu .sub-menu {
-		left: 15px;
+	.main-menu:after {
+		content: "";
+		display: inline-block;
+		width: 100%;
+	}
+	.main-menu li {
+		display: inline-block;
+	}
+	.main-menu li a{
+		font-size: 10.5px;
 	}
 	.hr-img img {
 		min-width: 500px;
 		position: relative;
 	}
 	.sub-list {
-		padding: 70px 15px 50px 90px;
+		padding: 70px 15px 50px 40px;
 	}
 	.category-section .section-title,
 	.playlist-section .section-title {
@@ -1569,12 +1544,10 @@ Responsive
 	.header-right-warp .header-right {
 		display: block;
 		float: none;
-		padding: 0 0 24px;
+		padding: 0 0 4px;
 		margin-left: 0;
 	}
-	.header-right-warp .header-right span {
-		display: none;
-	}
+
 	.header-right-warp .header-right .user-panel {
 		display: block;
 		padding-left: 26px;
@@ -1708,7 +1681,7 @@ Responsive
 	}
 	.slicknav_nav .slicknav_row,
 	.slicknav_nav a {
-		padding: 12px 25px;
+		padding: 12px 8px;
 		margin: 0;
 	}
 	.slicknav_nav a:hover {
@@ -1730,11 +1703,10 @@ Responsive
 	.header-right-warp .header-right {
 		display: block;
 		float: none;
-		padding: 0 0 24px;
+
 		margin-left: 0;
 	}
 	.header-right-warp .header-right span {
-		display: none;
 	}
 	.header-right-warp .header-right .user-panel {
 		display: block;
@@ -1952,7 +1924,8 @@ Responsive
 }
 
 #actact {
-	color: #0e9b0e;
+	background-color: #0e9b0e;
+	color: white;
 }
 
 ul.breadcrumb {
