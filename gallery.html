@@ -64,9 +64,9 @@
 				
 				<div class="cell"><b>Email: </b><a href="mailto:goodmannerskalvikulumam@gmail.com" class="hr-btn">goodmannerskalvikulumam@gmail.com</a> </div>
 			</div><br>
-
+			<div id="navcolor">
 		<ul class="main-menu">
-			<li><a href="index.html">தொடக்கப் பக்கம்</a></li>
+			<li><a href="index.html">முகப்பு</a></li>
 			<li><a href="about.html">குட் மேனர்ஸ் பற்றி</a></li>
 			<li><a href="course.html">வழங்கப்படும் படிப்புகள்</a></li>
 			<li><a href="why.html">ஏன் குட் மேனர்ஸ்?</a></li>
@@ -74,11 +74,12 @@
 			<li><a href="gallery.html" id="actact">புகைப்படங்கள்</a></li>
 			<li><a href="contact.html">தொடர்புகொள்ள </a></li>
 		</ul>
+		</div>
 	</header>
 	<!-- Header section end -->
 	<ul class="breadcrumb">
-		<li><a href="index.html">தொடக்கப் பக்கம்</a></li>
-		<li>புகைப்படங்கள்</li>
+		<li><a href="index.html">முகப்பு <i class="fa fa-home"></i></a></li>
+		<li>புகைப்படங்கள் <i class="fa fa-film"></i></li>
 	  </ul>
 	<!-- Playlist section -->
 	<section class="playlist-section spad">
@@ -428,7 +429,56 @@ function showSlides(n) {
 						<div class="col-md-2">
 							<div class="footer-widget">
 								<h2><a href="course.html">வழங்கப்படும் படிப்புகள்</a></h2>
-					<p>குட் மேனர்ஸ் கல்வி குழுமத்தில் ஆறு படிப்புகள் வழங்கப்படுகின்றன.</p>
+					<div id="footercourse">
+								<p>குட் மேனர்ஸ் கல்வி குழுமத்தில் ஆறு படிப்புகள் வழங்கப்படுகின்றன.<span id="dots2">...</span><span id="more2"><br><img src="img/icons/check-icon.png" alt=""><a href="course.html#course1">Diploma in Healthcare & Maternity asst.</a>
+						<br><img src="img/icons/check-icon.png" alt=""><a href="course.html#course2">Diploma in Laboratory Technology</a>
+						<br><img src="img/icons/check-icon.png" alt=""><a href="course.html#course3">Diploma in Beautician Technology</a>
+						<br><img src="img/icons/check-icon.png" alt=""><a href="course.html#course4">Diploma in Hotel Management</a>
+						<br><img src="img/icons/check-icon.png" alt=""><a href="course.html#course5">Diploma in Fire & Safety Technology</a>
+						<br><img src="img/icons/check-icon.png" alt=""><a href="course.html#course6">Diploma in Land Surveyor</a></span><button onclick="myFunction2()" id="myBtn2">மேலும் படிக்க</button></p>
+</div>
+					<style>
+						#footercourse a{
+							color: #ececec;
+							font-size: 13px;
+						}
+						#footercourse a:hover,
+						#footercourse a:active{
+							color: rgb(196, 196, 196);
+						}
+						#more2 {display: none;}
+						#myBtn2 {
+							display: inline-block;
+							border: none;
+							font-size: 12px;
+							font-weight: 500;
+							
+							
+							text-transform: uppercase;
+							background: none;
+							color: #0e9b0e;
+							line-height: normal;
+							cursor: pointer;
+							text-align: center;
+						}
+						</style>
+					<script>
+						function myFunction2() {
+						  var dots = document.getElementById("dots2");
+						  var moreText = document.getElementById("more2");
+						  var btnText = document.getElementById("myBtn2");
+						
+						  if (dots.style.display === "none") {
+							dots.style.display = "inline";
+							btnText.innerHTML = "மேலும் படிக்க"; 
+							moreText.style.display = "none";
+						  } else {
+							dots.style.display = "none";
+							btnText.innerHTML = "குறைவாக படிக்க"; 
+							moreText.style.display = "inline";
+						  }
+						}
+						</script>
 							</div>
 						</div>
 						<div class="col-md-2">
