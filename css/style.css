@@ -1684,7 +1684,7 @@ Responsive
 	}
 	.slicknav_nav .slicknav_row,
 	.slicknav_nav a {
-		padding: 12px 15px;
+		padding: 13px 17px;
 		margin: 0;
 	}
 	.slicknav_nav a:hover {
@@ -1705,12 +1705,11 @@ Responsive
 	}
 	.header-right-warp .header-right {
 		display: block;
-		float: left;
+		float: right;
 
 		margin-left: 0;
 	}
-	.header-right-warp .header-right span {
-	}
+
 	.header-right-warp .header-right .user-panel {
 		display: block;
 		padding-left: 26px;
