@@ -1705,7 +1705,7 @@ Responsive
 	}
 	.header-right-warp .header-right {
 		display: block;
-		float: right;
+		float: left;
 
 		margin-left: 0;
 	}
